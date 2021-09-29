@@ -28,7 +28,7 @@ end
 # "hello" * 3 == "hellohellohello"
 def print_spicy_foods(spicy_foods)
   spicy_foods.each do |food|
-    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{'🌶 '*food[:heat_level]}"
+    puts "#{food[:name]} (#{food[:cuisine]}) | Heat Level: #{'🌶'*food[:heat_level]}"
   end
 end
 
