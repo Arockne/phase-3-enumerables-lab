@@ -43,15 +43,13 @@ end
 def sort_by_heat(spicy_foods)
   spicy_foods.sort_by {|food| food[:heat_level]}
 end
-pp sort_by_heat(spicy_foods)
 
 # given an array of spicy foods, output to the terminal ONLY 
 # the spicy foods that have a heat level greater than 5, in the following format: 
 # Buffalo Wings (American) | Heat Level: 🌶🌶🌶
 # HINT: Try to use methods you've already written to solve this!
 def print_spiciest_foods(spicy_foods)
-  spicy_foods = spicy_foods.filter { |food| food[:heat_level] > 5 }
-  print_spicy_foods(spicy_foods)
+  print_spicy_foods(spiciest_foods(spicy_foods))
 end
 
 # given an array of spicy foods, return an integer representing 
